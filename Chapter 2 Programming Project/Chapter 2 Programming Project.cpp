@@ -3,14 +3,14 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    //Step 1 set the price to 59.95.
-    double price = 59.95;
-    //Step 2 calculate the discounted price.
-    double discountPrice = price * .2;
-    //Step 3 display the discounted price.
-    std::cout << "The new price is:" << discountPrice;
+    double monthlyIncome = 6000;
+    cout << monthlyIncome * .05<<endl;
+    cout << monthlyIncome * .07 << endl;
+    cout << monthlyIncome * .1 << endl;
 
 
     return 0;
