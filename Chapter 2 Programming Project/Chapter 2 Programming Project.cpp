@@ -7,11 +7,32 @@ using namespace std;
 
 int main()
 {
-    double monthlyIncome = 6000;
-    cout << monthlyIncome * .05<<endl;
-    cout << monthlyIncome * .07 << endl;
-    cout << monthlyIncome * .1 << endl;
+    int number = 6030;
 
+    //Cacluate digit 1
+    int digit1 = number / 1000;
+    cout << digit1<<endl;
+
+    //Find digit 2
+    int remainder = number % 1000;
+    int digit2 = remainder / 100;
+    cout << digit2 << endl;
+
+    //digit 3
+    remainder = remainder % 100;
+    int digit3 = remainder / 10;
+    cout << digit3 << endl;
+
+    //digit 4
+    remainder = remainder % 10;
+    int digit4 = remainder;
+    cout << digit4 << endl;
+
+    //Part B
+    int seconds = 504;
+    int minutes = seconds / 60;
+    seconds = seconds % 60;
+    cout << seconds << " seconds and " << minutes << " minutes";
 
     return 0;
 }
